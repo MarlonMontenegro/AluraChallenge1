@@ -1,0 +1,239 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+:root {
+    --Background-color: #F3F5FC;
+    --button-color: #0A3871;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background-color: var(--Background-color);
+    color: var(--paragraph-color);
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin-bottom: 100px;
+    margin: 0;
+}
+
+
+/*=========================LOGO=============================*/
+
+.logo {
+    position: absolute;
+    top: 20px; /* Add some padding to the top */
+    left: 20px; /* Add some padding to the left */
+}
+
+
+/*=========================Right-Part=============================*/
+.right-box {
+    position: fixed;
+    top: 40px;
+    left: 945px;
+    width: 300px;
+    height: 544px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 32px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.message-box {
+    border-top: 100px;
+    text-align: center;
+    top: 40px;
+}
+
+.right-box img {
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 85px;
+}
+
+.message-box p {
+    font-weight: lighter;
+    opacity: 80%;
+    font-size: 12px;
+}
+
+.buttons-container-message {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    width: calc(100% - 20px);
+    gap: 20px;
+}
+
+.copy-button {
+    border: 1px solid;
+    text-align: center;
+    display: inline-block;
+    padding: 14px;
+    width: 200px;
+    margin: 7px;
+    color: var(--button-color);
+    background-color: white;
+    border-color: var(--button-color);
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 32px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-family: 'Poppins', sans-serif;
+}
+
+.result {
+    align-content: center;
+    margin-top: 25px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+/*=========================Left-Part=============================*/
+.left-box {
+    position: fixed;
+    top: 5%;
+    left: 200px;
+    width: 650px;
+    height: 550px;
+    background-color: var(--Background-color);
+    padding: 10px;
+}
+
+.buttons-container {
+    position: absolute;
+    bottom: 10px;
+    left: 120px;
+    justify-content: center;
+    width: calc(100% - 20px);
+    gap: 30px;
+}
+
+.encript {
+    border: 0;
+    text-align: center;
+    display: inline-block;
+    padding: 14px;
+    width: 200px;
+    margin: 7px;
+    color: #ffffff;
+    background-color: var(--button-color);
+    border-radius: 32px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 32px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-family: 'Poppins', sans-serif;
+}
+
+.decript {
+    border: 1px solid;
+    right: 100px;
+    text-align: center;
+    display: inline-block;
+    padding: 14px;
+    width: 200px;
+    margin: 7px;
+    color: var(--button-color);
+    background-color: var(--Background-color);
+    border-color: var(--button-color);
+    border-radius: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 32px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-family: 'Poppins', sans-serif;
+}
+
+.alert-text {
+    position: relative;
+    bottom: 5px;
+    left: 15px;
+    opacity: 90%;
+    font-size: 12px;
+    color: var(--dark-Color);
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-textArea {
+    display: block;
+    width: 490px;
+    background-color: var(--Background-color);
+    border-radius: 5px;
+    padding: 20px 25px 30px;
+    margin-left: 76px;
+
+}
+
+.container-textArea textarea {
+    width: 100%;
+    height: 300px;
+    padding: 15px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 20px;
+    margin-top: 20px;
+    border-color: var(--button-color);
+    resize: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 32px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.container-textArea h2 {
+    color: #4671EA;
+    font-size: 28px;
+    text-align: center;
+}
+
+/*=========================FOOTER=============================*/
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+    padding: 10px;
+    font-size: 12px;
+    color: black;
+}
+
+.fa-github {
+    color: black;
+    font-size: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.fa-github:hover {
+    transform: rotate(360deg) scale(1.2);
+}
+
+.fa-linkedin {
+    font-size: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.fa-linkedin:hover {
+    transform: rotate(360deg) scale(1.2);
+}
+
+
